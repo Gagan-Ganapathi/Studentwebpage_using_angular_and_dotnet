@@ -1,0 +1,197 @@
+<!-- <h2>Add New Student</h2>
+<div class="form-container">
+<div class="form-header text-center">
+<h2>Student Form</h2>
+</div>
+<form id="studentForm">
+<!-- <div class="form-group">
+<label for="studentId">Student ID:</label>
+<input type="number" class="form-control" id="studentId" name="studentId"
+Required />
+</div> 
+<div class="form-group">
+<label for="studentName">Student Name:</label>
+<input
+type="text"
+[(ngModel)]="studentObj.studentName"
+class="form-control"
+id="studentName"
+name="studentName"
+required
+/>
+</div>
+<div class="form-group">
+<label for="studentGrade">Student Grade:</label>
+<input
+type="text"
+[(ngModel)]="studentObj.studentGrade"
+class="form-control"
+id="studentGrade"
+name="studentGrade"
+required
+/>
+</div>
+<div class="form-group">
+<label for="studentRollNo">Student Roll No:</label>
+<input
+type="text"
+[(ngModel)]="studentObj.studentRollNo"
+class="form-control"
+id="studentRollNo"
+name="studentRollNo"
+required
+/>
+</div>
+<div class="form-group form-check">
+<input
+type="checkbox"
+[(ngModel)]="studentObj.isActive"
+class="form-check-input"
+id="isActive"
+name="isActive"
+checked
+/>
+<label class="form-check-label" for="isActive">Is Active</label>
+</div>
+<div class="form-group">
+<label for="createdDate">Created Date:</label>
+<input
+type="date"
+[(ngModel)]="studentObj.createdDate"
+class="form-control"
+id="createdDate"
+name="createdDate"
+required
+/>
+</div>
+<div class="form-group">
+<label for="modifiedDate">Modified Date:</label>
+<input
+type="date"
+[(ngModel)]="studentObj.modifiedDate"
+class="form-control"
+id="modifiedDate"
+name="modifiedDate"
+/>
+</div>
+<button
+type="submit"
+class="btn btn-primary btn-block"
+(click)="onSubmit()"
+>
+Submit
+</button>
+</form>
+</div> -->
+
+
+
+<div class="container">
+    <div class=" text-center mt-5 ">
+
+        <h1 >Add New Student</h1>
+            
+        
+    </div>
+
+
+<div class="row ">
+  <div class="col-lg-7 mx-auto">
+    <div class="card mt-2 mx-auto p-4 bg-dark">
+        <div class="card-body bg-danger">
+   
+        <div class = "container">
+                         <form id="contact-form" role="form">
+
+        
+
+        <div class="controls">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">Student Name *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Student Name *" required="required" data-error="Firstname is required." [(ngModel)]="studentObj.studentName"
+                        >
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Student Grade *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Student Grade *" required="required" data-error="Lastname is required." [(ngModel)]="studentObj.studentGrade"
+                        >
+                                                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Student Roll No: *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your Rollno. *" required="required" data-error="Valid Rollno. is required." [(ngModel)]="studentObj.studentRollNo"
+                        >
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-check mt-4" >
+                        <label for="form_need">isActive *</label>
+                        <input type="checkbox"
+                        [(ngModel)]="studentObj.isActive"
+                        class="form-check-input"
+                        id="isActive"
+                        name="isActive"
+                        checked>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">CreatedDate *</label>
+                        <input type="date"
+                        [(ngModel)]="studentObj.createdDate"
+                         id="form_message" name="message" class="form-control" 
+                         placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message.">
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">ModifiedDate *</label>
+                            <input type="date" [(ngModel)]="studentObj.modifiedDate"
+                             id="form_message" name="message" class="form-control" 
+                             placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message.">
+                                
+                            </div>
+    
+                        </div>
+      
+            </div>
+            <button
+type="submit"
+class="btn btn-primary btn-block mt-5"
+(click)="onSubmit()"
+>
+Submit
+</button>
+
+
+    </div>
+     </form>
+    </div>
+        </div>
+
+
+</div>
+    <!-- /.8 -->
+
+</div>
+<!-- /.row-->
+
+</div>
+</div>
